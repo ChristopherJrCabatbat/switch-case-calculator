@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+#display {
+    width: 100%;
+    height: 50px;
+    border: none;
+    text-align: right;
+    padding: 30px;
+    font-size: 2rem;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Clear button takes 3 columns */
+.clear {
+    grid-column: span 3;
+}
+
+/* Backspace button takes 1 column */
+.backspace {
+    grid-column: span 1;
+}
+
+.btn {
+    width: 100%;
+    padding: 20px;
+    font-size: 2rem;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn:hover {
+    background-color: #f0f0f0;
+}
+
+button.clear, button.backspace {
+    padding: 15px;
+}
